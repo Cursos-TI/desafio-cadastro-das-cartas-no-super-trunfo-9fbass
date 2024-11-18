@@ -19,16 +19,21 @@ int main() {
 
 
     char estado;
+    char cidade[50];
+    char codigo[50];
     int populacao;
     float area;
     float pib;
     int turismo;
     float media1;
     float media2;
-
+    
 
     printf("Digite a inicial do estado: \n");
     scanf("%c", &estado);
+
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", &cidade);
 
     printf("Digite o número da população: \n");
     scanf("%d", &populacao);
@@ -48,8 +53,10 @@ int main() {
     media2 = (float) pib / populacao;
 
 
+
     printf("\n" "*** Carta Cadastrada ***\n");
     printf("\n" "Inicial do estado: %c\n", estado);
+    printf("Nome da cidade: %s\n", cidade);
     printf("Número da população: %d\n", populacao);
     printf("Tamanho da área: %.2f km² \n", area);
     printf("Densidade populacional: %.2f pessoas/km² \n", media1);
