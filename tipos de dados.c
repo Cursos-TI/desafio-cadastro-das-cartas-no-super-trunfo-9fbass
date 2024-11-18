@@ -43,7 +43,7 @@ eu determino que a resposta em si, será em ponto flutuante, mesmo que ambas sej
     float resultado = a + b;
 
     printf("Resultado: %.2f\n", resultado);
-        // Ao colocal o ".2" entre "%f", determina que o resultado será mostrado em ponto flutuante.
+    // Ao colocal o ".2" entre "%f", determina que o resultado será mostrado em ponto flutuante com apenas 2 casas.
 
 
 
