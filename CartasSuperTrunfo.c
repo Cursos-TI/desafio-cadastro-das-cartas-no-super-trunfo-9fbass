@@ -17,38 +17,45 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
+
     char estado;
-    int cidade;
     int populacao;
-    int area;
-    int pib;
+    float area;
+    float pib;
     int turismo;
-
-printf("Digite a inicial do estado: \n");
-scanf("%c", &estado);
-
-printf("Digite o número da cidade: \n");
-scanf("%d", &cidade);
-
-printf("Digite o número da população: \n");
-scanf("%d", &populacao);
-
-printf("Digite o tamanho da área: \n");
-scanf("%d", &area);
-
-printf("Digite o número do PIB: \n");
-scanf("%d", &pib);
-
-printf("Digite o número de pontos turisticos: \n");
-scanf("%d", &turismo);
+    float media1;
+    float media2;
 
 
-printf("inicial do estado: %c\n", estado);
-printf("número da cidade: %d\n", cidade);
-printf("número da população: %d\n", populacao);
-printf("tamanho da área: %d\n", area);
-printf("número de PIB: %d\n", pib);
-printf("número de pontos turisticos: %d\n", turismo);
+    printf("Digite a inicial do estado: \n");
+    scanf("%c", &estado);
+
+    printf("Digite o número da população: \n");
+    scanf("%d", &populacao);
+
+    printf("Digite o tamanho da área: \n");
+    scanf("%f", &area);
+
+    printf("Digite o valor do PIB: \n");
+    scanf("%f", &pib);
+    
+    printf("Digite o número de pontos turisticos: \n");
+    scanf("%d", &turismo);
+
+
+    media1 = (float) populacao / area;
+
+    media2 = (float) pib / populacao;
+
+
+    printf("\n" "*** Carta Cadastrada ***\n");
+    printf("\n" "Inicial do estado: %c\n", estado);
+    printf("Número da população: %d\n", populacao);
+    printf("Tamanho da área: %.2f km² \n", area);
+    printf("Densidade populacional: %.2f pessoas/km² \n", media1);
+    printf("Valor do PIB: R$ %.2f\n", pib); 
+    printf("PIB per Capita: R$ %.2f\n", media2);
+    printf("Número de pontos turisticos: %d\n", turismo);
 
 
 
