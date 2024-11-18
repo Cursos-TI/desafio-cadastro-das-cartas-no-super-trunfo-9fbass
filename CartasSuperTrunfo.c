@@ -50,5 +50,7 @@ printf("tamanho da área: %d\n", area);
 printf("número de PIB: %d\n", pib);
 printf("número de pontos turisticos: %d\n", turismo);
 
+
+
     return 0;
 }
