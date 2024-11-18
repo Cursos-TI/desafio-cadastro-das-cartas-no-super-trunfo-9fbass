@@ -20,7 +20,6 @@ int main() {
 
     char estado;
     char cidade[50];
-    char codigo[50];
     int populacao;
     float area;
     float pib;
