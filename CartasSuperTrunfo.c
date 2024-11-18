@@ -43,10 +43,12 @@ printf("Digite o número de pontos turisticos: \n");
 scanf("%d", &turismo);
 
 
-printf("inicial do estado: %c - número da cidade: %d\n", estado, cidade);
-printf("número da população: %d - tamanho da área: %d\n", populacao, area);
-printf("número de PIB: %d - número de pontos turisticos: %d\n", pib, turismo);
-
+printf("inicial do estado: %c\n", estado);
+printf("número da cidade: %d\n", cidade);
+printf("número da população: %d\n", populacao);
+printf("tamanho da área: %d\n", area);
+printf("número de PIB: %d\n", pib);
+printf("número de pontos turisticos: %d\n", turismo);
 
     return 0;
 }
