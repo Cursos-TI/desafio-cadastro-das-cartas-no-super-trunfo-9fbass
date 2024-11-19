@@ -21,7 +21,7 @@
     char estado;
     char codigo[50];
     char cidade[50];
-    int populacao;
+    unsigned long int populacao;
     float area;
     float pib;
     int turismo;
@@ -61,7 +61,7 @@
     printf("\n" "Inicial do estado: %c\n", estado);
     printf("Código da carta: %c%s\n", estado, codigo);
     printf("Nome da cidade: %s\n", cidade);    
-    printf("Número da população: %d\n", populacao);
+    printf("Número da população: %lu\n", populacao);
     printf("Tamanho da área: %.2f km² \n", area);
     printf("Densidade populacional: %.2f pessoas/km² \n", media1);
     printf("Valor do PIB: R$ %.2f\n", pib); 
