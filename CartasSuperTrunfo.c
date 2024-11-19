@@ -19,8 +19,8 @@
 
 
     char estado;
-    char cidade[50];
     char codigo[50];
+    char cidade[50];
     int populacao;
     float area;
     float pib;
@@ -32,11 +32,11 @@
     printf("Digite a inicial do estado: \n");
     scanf("%c", &estado);
 
-    printf("Digite o nome da cidade: \n"); 
-    scanf(" %[^\n]", cidade);
-
     printf("Digite o codigo da cidade: \n");
     scanf("%s", &codigo);
+
+    printf("Digite o nome da cidade: \n"); 
+    scanf(" %[^\n]", cidade);
 
     printf("Digite o número da população: \n");
     scanf("%d", &populacao);
@@ -57,12 +57,10 @@
 
 
 
-
-
     printf("\n" "*** Carta Cadastrada ***\n");
     printf("\n" "Inicial do estado: %c\n", estado);
-    printf("Nome da cidade: %s\n", cidade);    
     printf("Código da carta: %c%s\n", estado, codigo);
+    printf("Nome da cidade: %s\n", cidade);    
     printf("Número da população: %d\n", populacao);
     printf("Tamanho da área: %.2f km² \n", area);
     printf("Densidade populacional: %.2f pessoas/km² \n", media1);
@@ -70,7 +68,7 @@
     printf("PIB per Capita: R$ %.2f\n", media2);
     printf("Número de pontos turisticos: %d\n", turismo);
 
-
+    printf("\n");
 
     return 0;
 }
