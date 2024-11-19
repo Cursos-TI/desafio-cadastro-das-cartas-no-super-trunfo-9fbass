@@ -51,8 +51,8 @@
     scanf("%d", &turismo);
 
 
-    media1 = (float) populacao / area;
 
+    media1 = (float) populacao / area;
     media2 = (float) pib / populacao;
 
 
@@ -69,6 +69,9 @@
     printf("Número de pontos turisticos: %d\n", turismo);
 
     printf("\n");
+
+
+
 
     return 0;
 }
